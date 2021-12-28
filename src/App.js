@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header';
+import Paragraph from './components/Paragraph';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <div className='mx-auto lg:w-3/4 md:w-full p-12'>
+        <Paragraph
+          heading='Introduction'
+          content='Ducimus culpa unde alias sunt vel aspernatur. Deserunt voluptate sequi est aliquid animi. Voluptas porro cum quia dolores. Quam aut aspernatur architecto. Exercitationem ipsam ut voluptatibus aspernatur praesentium est fuga. Deleniti sed mollitia aut aliquid.'
+        />
+      </div>
     </div>
   );
 }
