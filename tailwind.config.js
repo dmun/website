@@ -4,7 +4,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      serif: ['Song Myung']
+      serif: ['Song Myung'],
+      sans: ['Epilogue'],
     },
     extend: {},
   },

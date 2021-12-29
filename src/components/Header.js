@@ -3,24 +3,20 @@ import { ReactComponent as ReactLogo } from '../logo.svg';
 
 function Header() {
   return (
-    <header className='p-5 bg-slate-900 flex'>
-      <div className='flex flex-row'>
-        <ReactLogo className='h-5 my-auto' />
-        <h1 className='text-white text-2xl font-serif font-medium'>
-          David van Munster
-        </h1>
-      </div>
-      <div className='grow'>
-      </div>
-      <div className='flex flex-row-reverse'>
-        <h1 className='mx-4 text-white text-lg font-serif'>
-          About me
-        </h1>
-        <h1 className='mx-4 text-white text-lg font-serif'>
-          M'n ballen
-        </h1>
-      </div>
-    </header>
+    <nav className='absolute w-full text-white p-5 flex flex-row place-content-between'>
+      <a
+        className='font-medium text-xl flex flex-row'
+        href='/'
+      >
+        <ReactLogo className='h-6 sm:h-4 my-auto' />
+        <a className='invisible absolute sm:visible sm:relative pt-1'>David van Munster</a>
+      </a>
+      <ul className='text-slate-400 flex flex-row my-auto'>
+        <li className='px-2 hover:text-white transition-colors'>About</li>
+        <li className='px-2 hover:text-white transition-colors'>Work</li>
+        <li className='px-2 hover:text-white transition-colors'>Contact</li>
+      </ul>
+    </nav>
   );
 }
 
