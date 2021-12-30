@@ -12,9 +12,15 @@ function Header() {
         <a className='invisible absolute sm:visible sm:relative pt-1'>David van Munster</a>
       </a>
       <ul className='flex flex-row my-auto'>
-        <li className='px-2 opacity-50 hover:opacity-100 transition-opacity'>About</li>
-        <li className='px-2 opacity-50 hover:opacity-100 transition-opacity'>Work</li>
-        <li className='px-2 opacity-50 hover:opacity-100 transition-opacity'>Contact</li>
+        <li className='px-2 opacity-50 hover:opacity-100 transition-opacity'>
+          <a href='#about'>About</a>
+        </li>
+        <li className='px-2 opacity-50 hover:opacity-100 transition-opacity'>
+          <a href='#work'>Work</a>
+        </li>
+        <li className='px-2 opacity-50 hover:opacity-100 transition-opacity'>
+          <a href='#contact'>Contact</a>
+        </li>
       </ul>
     </nav>
   );
