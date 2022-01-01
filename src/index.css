@@ -7,3 +7,8 @@
 body {
   background-color: #0f172a;
 }
+
+*, -web-kit-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
