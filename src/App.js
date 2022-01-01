@@ -50,7 +50,7 @@ function App() {
               Contact
             </h1>
             <p className="leading-7 text-blue-300">
-              Do not hesitate to contact me! I will reply as soon as possible.
+              Do not hesitate to contact me! I will reply as soon as possible to any question you might have.
             </p>
           </div>
         </div>
