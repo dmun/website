@@ -1,5 +1,4 @@
 import Header from "./components/Header";
-import Footer from "./components/Footer";
 import Page from "./components/Page";
 import ScrollHint from "./components/ScrollHint";
 
@@ -43,22 +42,46 @@ function App() {
         </div>
       </Page>
 
-      <Page id="contact" className="bg-blue-900 h-2/3">
+      <Page id="contact" className="bg-blue-900 h-full">
         <div className="w-full h-full flex items-center">
+          <div className='w-full flex flex-col'>
           <div className="md:w-2/3 lg:w-1/2 mx-auto w-full">
             <h1 className="leading-10 text-white text-4xl font-bold pb-3">
               Contact
             </h1>
-            <p className="leading-7 text-blue-300">
-              Do not hesitate to contact me! I will reply as soon as possible to any question you might have.
+            <p className="leading-7 text-blue-300 pb-10">
+              Do not hesitate to contact me! I will reply as soon as possible to
+              any question you might have.
             </p>
           </div>
+          <div className='flex md:w-2/3 lg:w-1/2 mx-auto w-full text-blue-400'>
+            <div className="w-1/2">
+              <h1 className="text-white text-sm pb-2">Email</h1>
+              <ul>
+                <li className="hover:text-white transition-colors">
+                  hello@davidvanmunster.com
+                </li>
+              </ul>
+            </div>
+            <div className="w-1/3">
+              <h1 className="text-white text-sm pb-2">Relevant links</h1>
+              <ul>
+                <li className="hover:text-white transition-colors">
+                  <a href="https://www.linkedin.com/in/david-van-munster-10324115b/">
+                    LinkedIn
+                  </a>
+                </li>
+                <li className="hover:text-white transition-colors">
+                  <a href="https://www.github.com/dmun/">GitHub</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          </div>
         </div>
-      </Page>
-      <Page className="bg-slate-900 h-1/3 w-full p-12">
-        <div className="md:w-2/3 lg:w-1/2 mx-auto w-full">
-          <Footer />
-        </div>
+        <p className="absolute bottom-8 text-sm text-blue-500">
+          © 2022 David van Munster
+        </p>
       </Page>
     </div>
   );
