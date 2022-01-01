@@ -3,7 +3,7 @@ function Page(props) {
     <div
       id={props.id}
       className={
-        "snap-start h-full w-full overflow-hidden relative p-10 " + props.shade
+        "text-white snap-start h-full w-full overflow-hidden relative p-10 " + props.className
       }
     >
       {props.children}
